@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="page1.js"></script>
+    <link rel="stylesheet" href="page1.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de contacto</h1>
+    </header>
+    <form action="" method="get" id="formulario">
+        
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" size="100" maxlength="10">
+        </p>
+        <p>
+            <label for="edad">Edad <input type="number" name="edad" id="edad" min="18" max="65"></label>
+        </p>
+        <p>Fecha de Nacimiento
+        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento">
+        </p>
+        <p>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" name="correo" id="correo" autocomplete="on">
+        </p>
+        <p>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio">
+        </p>
+        <p>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena" size="25" maxlength="10">
+        </p>
+        <p><h2>Seleccione la opcion deseada</h2>
+            <select name="turno" id="">
+                <option value="1">Mañana</option>
+                <option value="2">Tarde</option>
+                <option value="3">Noche</option>
+            </select>
+        </p>
+        <p>
+            <label for="file"><h4>Subir Archivo</h4></label>
+            <input type="file" name="file" id="file">
+        </p>
+ 
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </p>
+    </form>
+    
+</body>
+</html>

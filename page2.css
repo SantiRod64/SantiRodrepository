@@ -1,0 +1,24 @@
+* {
+    background-color: bisque;
+}
+
+.grid-container {
+    width: 920px;
+    display: grid;
+    grid-template-columns: 300px 150px 450px;
+    grid-template-rows: 150px 100px 80px;
+    gap: 10px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cierre {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
