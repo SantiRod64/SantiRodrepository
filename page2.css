@@ -1,24 +1,207 @@
 * {
-    background-color: bisque;
+  margin: 0;
+  
 }
 
+body {
+  background-color: beige;
+}
+
+  
+/* Barra Superior */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.barra-top {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-end;
+      
+      list-style: none;
+      margin: 0;
+      
+      background: rgb(101, 231, 192);
+  
+}
+    
+.barra-top a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: black;
+      background-color: rgb(101, 231, 192);
+      font-family: "Blaka";
+      font-size: 30px;
+}
+    
+.barra-top a:hover {
+      background: #1565C0;
+    }
+
+  /* Pulse */
+  @-webkit-keyframes hvr-pulse {
+      25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+    @keyframes hvr-pulse {
+      25% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+      75% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+    .hvr-pulse {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+    .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+      -webkit-animation-name: hvr-pulse;
+      animation-name: hvr-pulse;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+  
+
 .grid-container {
-    width: 920px;
+    width: 840px;
+    height: 1442px;
     display: grid;
-    grid-template-columns: 300px 150px 450px;
-    grid-template-rows: 150px 100px 80px;
-    gap: 10px;
-    background-color: aquamarine;
-    padding: 10px;
+    grid-template-columns: 930px 930px;
+    grid-template-rows: 480px 480px 480px;
+    gap: 1px;
+    
 }
 
 .grid-container > div {
-    background-color: orange;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    /* 
+    border: 5px;
+    border-color: black;
+    border-style: dotted;
+     */
 }
 
-.cierre {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#texto_animado {
+  background-color: beige;
+  font-family: "blaka";
+  font-size: 100px;
+}
+
+#texto {
+  color: black;
+}
+
+#texto2 {
+  color: white;
+}
+
+h5 {
+  color: rgb(73, 22, 190);
+}
+
+p {
+  color: black;
+}
+
+/* Diseño Responsive */  
+
+@media all and (max-width: 800px) {
+    .barra-top {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .barra-top {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .barra-top a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .barra-top li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+  
+/* Footer */
+
+footer {
+  background-color: rgb(101, 231, 192);
+  
+}
+
+.linea {
+  border-top: 2px dashed rgb(172, 121, 121);
+  margin-left: 380px;
+  width: 1000px;
+}
+
+.contacto {
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 999;
+  margin-left: 750px;
+  background-color: rgb(101, 231, 192);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+  
+}
+
+.whatsapp {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 390px;
+  color: green;
+  background-color: rgb(101, 231, 192);
+  margin-bottom: 3px;
+}
+
+.descripcion2 {
+  background-color: rgb(101, 231, 192);
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 650px;
+  margin-bottom: 3px;
+}
+
+.links{
+  color: black;
+  font-size: 25px;
+  background-color: rgb(101, 231, 192);
+  padding-left: 10px;
+  
+  
+}
+
+.grupo_links {
+  margin-left: 810px;
 }

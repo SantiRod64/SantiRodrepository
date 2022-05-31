@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f73a27835.js" crossorigin="anonymous"></script>  
     <script src="page1.js"></script>
     <link rel="stylesheet" href="page1.css">
-    <title>Formulario de contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blaka&display=swap" rel="stylesheet">
+    <title>Contacto</title>
 </head>
 <body>
     <header>
-        <h1>Formulario de contacto</h1>
+        <h1>CONSULTANOS!!</h1>
     </header>
     <form action="" method="get" id="formulario">
         
         <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" size="100" maxlength="10">
+            <input type="text" name="nombre" class="categorias" id="nombre" placeholder="Nombre" size="30" maxlength="10">
         </p>
+
         <p>
-            <label for="edad">Edad <input type="number" name="edad" id="edad" min="18" max="65"></label>
+            
+            <input type="tel" name="telefono" class="categorias" id="telefono" placeholder="Telefono" size="30" autocomplete="on">
         </p>
-        <p>Fecha de Nacimiento
-        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento">
-        </p>
+
         <p>
-            <label for="correo">Correo Electronico</label>
-            <input type="email" name="correo" id="correo" autocomplete="on">
+            
+            <input type="email" name="correo" class="categorias" id="correo" placeholder="E-mail" size="30" autocomplete="on">
         </p>
+
         <p>
-            <label for="domicilio">Domicilio</label>
-            <input type="text" name="domicilio" id="domicilio">
+            <input type="number" name="edad" class="categorias" id="edad" placeholder="Edad" min="18" max="65">
         </p>
-        <p>
-            <label for="contrasena">Contraseña</label>
-            <input type="password" name="contrasena" id="contrasena" size="25" maxlength="10">
-        </p>
-        <p><h2>Seleccione la opcion deseada</h2>
-            <select name="turno" id="">
-                <option value="1">Mañana</option>
-                <option value="2">Tarde</option>
-                <option value="3">Noche</option>
+
+        <p><h2>Tengo interes en conocer mas sobre</h2>
+            <select name="consulta" id="consulta" class="categorias" title="Seleccione una opción válida">
+                <option value="1">Seleccione</option>
+                <option value="2">Actividades</option>
+                <option value="3">Comida</option>
+                <option value="4">Habitaciones</option>
+                <option value="5">Amenities</option>
+                <option value="6">Otros</option>
             </select>
         </p>
+
         <p>
-            <label for="file"><h4>Subir Archivo</h4></label>
-            <input type="file" name="file" id="file">
+
+
         </p>
- 
+
     <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
+        <input type="submit" value="ENVIAR" id="botones" class="categorias">
+        <input type="reset" value="BORRAR" id="botones" class="categorias">
     </p>
     </form>
     
