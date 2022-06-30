@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+    margin: 0;
 }
 
 body {
@@ -40,27 +40,7 @@ header {
     background: #1565C0;
   }
   
-  @media all and (max-width: 800px) {
-    .barra-top {
-      justify-content: space-around;
-    }
-  }
-  
-  @media all and (max-width: 600px) {
-    .barra-top {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-    .barra-top a { 
-      text-align: center; 
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .barra-top li:last-of-type a {
-      border-bottom: none;
-    }
-  }
+
 
 /* Pulse */
 @-webkit-keyframes hvr-pulse {
@@ -131,12 +111,30 @@ h2 {
   margin-left: 50px;
 }
 
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: beige;
+}
+
+.caja4 {
+  background-color: beige;
+  
+}
+
+.caja5 {
+  background-color: beige;
+
+}
+
+
 .grid {
   display: grid;
   
-  grid-template-columns: 700px 700px;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 120px 550px;
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: beige;
   
 }
@@ -146,27 +144,35 @@ h2 {
 }
 
 .caja1 {
-    font-family: "blaka";
-    font-size: 50px; 
     background-color: beige;
-    margin-left: 100px;
-    text-align: center;
+}
+
+.mifuente {
+  font-family: "blaka";
+  font-size: 50px; 
+  font-weight: 100;
+  background-color: beige;
+  text-align: center;
 }
 
 .caja2 {
-    grid-column-start: 1;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    padding-left: 500px;
-    padding-top: 30px;
-
+  /* 
+  grid-column-start: 1;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+   */
+  padding-top: 10px;
+  margin-left: 25%;
+  
 }
 
 .caja3 {
-    padding-left: 100px;
-    padding-top: 50px;
+  text-align: center;
+  padding-top: 50px;
 }
+
+
 
 /* Animación elemento */
 
@@ -188,21 +194,76 @@ h2 {
 }
 
 
-/* Formato Responsive */
+/* ----------------- Formato Responsive ------------------- */
 
-@media screen and (max-width:600px){
-  * {background-color: beige;}
+/* Computadoras y Notebooks */
+
+@media all and (max-width: 1080px) {
+  .barra-top {
+    justify-content: space-around;
+  }
+  .mifuente {
+    font-size: 30px;
+  }
+  .grid {
+    display: block;
+  }
+  .formulario_de_contacto {
+    height: 600px;
+  }
+
+  .caja2 {
+    height: 600px;
+  }
+
+  .caja3 {
+    height: 500px;
+  }
+}
+  
+/* Celulares */
+
+@media all and (max-width: 600px) {
+  
+  .barra-top {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .barra-top a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .barra-top li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .mifuente {
+    font-size: 30px;
+  }
+
+  .grid {
+    display: block;
+  }
+  .formulario_de_contacto {
+    height: 600px;
+    width: 100%;
+    
+  }
+
+  .caja2 {
+    height: 600px;
+    margin-left: 50px;
+  }
+
+  .caja3 {
+    height: 500px;
+  }
+
 }
 
-@media screen and (min-width:600px){
-  * {background-color: skyblue;}
-}
-
-@media screen and (min-width:1200px){
-  * {background-color: rgb(255, 255, 255);}
-}
-
-/* Footer */
+/* ------------ Footer --------------- */
 
 footer {
   background-color: rgb(101, 231, 192);
@@ -211,43 +272,45 @@ footer {
 
 .linea {
   border-top: 2px dashed rgb(172, 121, 121);
-  margin-left: 380px;
-  width: 1000px;
+  margin-left: 25%;
+  width: 50%;
 }
 
 .contacto {
-  font-size: 35px;
+  
+  font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 999;
-  margin-left: 750px;
   background-color: rgb(101, 231, 192);
   margin-bottom: 10px;
   margin-top: 10px;
-  
+  text-align: center;
   
 }
 
 .whatsapp {
-  display: inline-block;
-  font-size: 25px;
+  
+  font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 390px;
+  text-align: center;
   color: green;
   background-color: rgb(101, 231, 192);
   margin-bottom: 3px;
+  
 }
 
 .descripcion2 {
   background-color: rgb(101, 231, 192);
-  font-size: 15px;
+  font-size: 18px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 650px;
+  text-align: center;
   margin-bottom: 3px;
 }
 
 .links{
   color: black;
-  font-size: 25px;
+  text-align: center;
+  font-size: 35px;
   background-color: rgb(101, 231, 192);
   padding-left: 10px;
   
@@ -255,6 +318,6 @@ footer {
 }
 
 .grupo_links {
-  margin-left: 810px;
+  margin-left: 45%;
 }
 
